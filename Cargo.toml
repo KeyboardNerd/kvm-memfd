@@ -1,0 +1,10 @@
+[package]
+name = "cargo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+kvm-bindings = { version = "0.10.0", features = ["serde"] }
+kvm-ioctls = { path = "./kvm-ioctls/" }
+serde = { version = "1.0.208", features = ["derive", "rc"] }
+libc = "0.2.158"
